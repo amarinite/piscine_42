@@ -1,14 +1,28 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: amarquez <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/03/24 10:42:19 by amarquez          #+#    #+#             */
+/*   Updated: 2025/03/24 12:12:34 by amarquez         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 
-void ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void ft_print_reverse_alphabet(void)
+void	ft_print_reverse_alphabet(void)
 {
-	int ascii_num = 122;
-	while(ascii_num > 96)
+	int	ascii_num;
+
+	ascii_num = 122;
+	while (ascii_num > 96)
 	{
 		ft_putchar(ascii_num);
 		ascii_num--;
