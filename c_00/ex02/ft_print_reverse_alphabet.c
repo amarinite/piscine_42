@@ -19,12 +19,18 @@ void	ft_putchar(char c)
 
 void	ft_print_reverse_alphabet(void)
 {
-	int	ascii_num;
+	int	letter;
 
-	ascii_num = 122;
-	while (ascii_num > 96)
+	letter = 'z';
+	while (letter >= 'a')
 	{
-		ft_putchar(ascii_num);
-		ascii_num--;
+		ft_putchar(letter);
+		letter--;
 	}
 }
+
+/*int	main(void)
+{
+	ft_print_reverse_alphabet();
+	return (0);
+}*/

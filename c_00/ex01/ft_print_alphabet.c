@@ -19,12 +19,18 @@ void	ft_putchar(char c)
 
 void	ft_print_alphabet(void)
 {
-	int	ascii_num;
+	int	letter;
 
-	ascii_num = 97;
-	while (ascii_num < 123)
+	letter = 'a';
+	while (letter <= 'z')
 	{
-		ft_putchar(ascii_num);
-		ascii_num++;
+		ft_putchar(letter);
+		letter++;
 	}
 }
+
+/*int	main(void)
+{
+	ft_print_alphabet();
+	return (0);
+}*/
